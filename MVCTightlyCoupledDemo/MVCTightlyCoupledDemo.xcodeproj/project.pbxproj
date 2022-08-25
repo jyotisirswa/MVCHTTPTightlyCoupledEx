@@ -13,6 +13,8 @@
 		003AF54A28B67595004E456A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003AF54828B67595004E456A /* Main.storyboard */; };
 		003AF54C28B67599004E456A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 003AF54B28B67599004E456A /* Assets.xcassets */; };
 		003AF54F28B67599004E456A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003AF54D28B67599004E456A /* LaunchScreen.storyboard */; };
+		003AF55B28B676A4004E456A /* TightlyCoupledHTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003AF55A28B676A4004E456A /* TightlyCoupledHTTPManager.swift */; };
+		003AF55D28B676E8004E456A /* ConstantsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003AF55C28B676E8004E456A /* ConstantsAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		003AF54B28B67599004E456A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		003AF54E28B67599004E456A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		003AF55028B67599004E456A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		003AF55A28B676A4004E456A /* TightlyCoupledHTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TightlyCoupledHTTPManager.swift; sourceTree = "<group>"; };
+		003AF55C28B676E8004E456A /* ConstantsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		003AF54128B67595004E456A /* MVCTightlyCoupledDemo */ = {
 			isa = PBXGroup;
 			children = (
-				003AF54228B67595004E456A /* AppDelegate.swift */,
-				003AF54428B67595004E456A /* SceneDelegate.swift */,
-				003AF54628B67595004E456A /* ViewController.swift */,
+				003AF55828B67679004E456A /* Appdelegate */,
+				003AF55628B67663004E456A /* ViewControllers */,
+				003AF55728B67670004E456A /* Networking */,
+				003AF55928B67684004E456A /* Models */,
+				003AF55C28B676E8004E456A /* ConstantsAPI.swift */,
 				003AF54828B67595004E456A /* Main.storyboard */,
 				003AF54B28B67599004E456A /* Assets.xcassets */,
 				003AF54D28B67599004E456A /* LaunchScreen.storyboard */,
 				003AF55028B67599004E456A /* Info.plist */,
 			);
 			path = MVCTightlyCoupledDemo;
+			sourceTree = "<group>";
+		};
+		003AF55628B67663004E456A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				003AF54628B67595004E456A /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		003AF55728B67670004E456A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				003AF55A28B676A4004E456A /* TightlyCoupledHTTPManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		003AF55828B67679004E456A /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				003AF54228B67595004E456A /* AppDelegate.swift */,
+				003AF54428B67595004E456A /* SceneDelegate.swift */,
+			);
+			path = Appdelegate;
+			sourceTree = "<group>";
+		};
+		003AF55928B67684004E456A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +178,9 @@
 			files = (
 				003AF54728B67595004E456A /* ViewController.swift in Sources */,
 				003AF54328B67595004E456A /* AppDelegate.swift in Sources */,
+				003AF55B28B676A4004E456A /* TightlyCoupledHTTPManager.swift in Sources */,
 				003AF54528B67595004E456A /* SceneDelegate.swift in Sources */,
+				003AF55D28B676E8004E456A /* ConstantsAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
